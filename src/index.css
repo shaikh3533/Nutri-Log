@@ -1,13 +1,260 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 125.0rem) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 76.8rem) {
+  html {
+    font-size: 45%;
+  }
+}
+
+.container {
+  max-width: 144.0rem !important;
+}
+
+@font-face {
+  font-family: "inter-bold";
+  src: url("./assets/fonts/Inter/static/Inter-Bold.ttf");
+}
+
+@font-face {
+  font-family: "inter-400";
+  src: url("./assets/fonts/Inter/static/Inter-Medium.ttf");
+}
+
+@font-face {
+  font-family: "inter-regular";
+  src: url("./assets/fonts/Inter/static/Inter-Regular.ttf");
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  border: 0;
+  height: 1rem;
+}
+
+/* for scroll bar */
+.ScrollBar {
+  padding-right: 2rem;
+  height: 30rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem !important;
+  height: 0.3rem !important;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 1rem;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #1db790 !important;
+  border-radius: 1rem;
+}
+
+.fs-10 {
+  font-size: 1.0rem !important;
+}
+
+.fs-14 {
+  font-size: 1.4rem !important;
+}
+
+.fs-16 {
+  font-size: 1.6rem !important;
+}
+
+.fs-18 {
+  font-size: 1.8rem !important;
+}
+
+.fs-22 {
+  font-size: 2.2rem !important;
+}
+
+.fs-24 {
+  font-size: 2.4rem !important;
+}
+
+.fs-26 {
+  font-size: 2.6rem !important;
+}
+
+.fs-28 {
+  font-size: 2.8rem !important;
+}
+
+.fs-32 {
+  font-size: 3.2rem !important;
+}
+
+.bg-primry {
+  background: #1db790 !important;
+  /* background: rgba(2, 54, 92, 0.8) !important; */
+}
+
+.text-primry {
+  color: #1db790 !important;
+}
+
+.bg-section-1 {
+  background: linear-gradient(120deg, rgb(87, 86, 86), rgba(129, 100, 89, 0.6));
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.line {
+  border-bottom: .4rem solid #1db790 !important;
+  width: 5.0rem !important;
+  margin-top: .7rem !important;
+  margin-bottom: .7rem !important;
+}
+
+.login-bg {
+  background: linear-gradient(0deg, rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)),
+    url("./assets//images/loginbg1.jpg");
+  background-size: cover;
+  height: 100vh !important;
+  width: 100vw;
+}
+
+.nav-h {
+  height: 8.5rem !important;
+}
+
+nav img {
+  height: 6.5rem;
+  width: 6.5rem auto;
+}
+
+h1 {
+  font-family: "inter-bold" !important;
+  font-size: 5.8rem !important;
+  font-weight: 700 !important;
+  line-height: 7.0rem !important;
+  letter-spacing: 0em !important;
+}
+
+.inter-regular {
+  font-family: "inter-regular";
+}
+
+.inter-400 {
+  font-family: "inter-400";
+  font-weight: 40.0rem !important;
+}
+
+.login-card {
+  height: 53rem !important;
+  background-color: white;
+  border-radius: 2.0rem;
+  gap: 3.0rem;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  padding: 1rem !important;
+}
+
+.h-80 {
+  height: calc(100%-7.5rem) !important;
+}
+
+.h-85 {
+  height: 85% !important;
+}
+
+input {
+  height: 5.5rem !important;
+  padding: 0rem, 2rem, 0rem, 2rem !important;
+  border-radius: 1.2rem !important;
+  border: 0.2rem solid #B9B9B9 !important;
+  font-family: "inter-400" !important;
+  font-size: 1.6rem !important;
+  font-weight: 500 !important;
+  line-height: 1.9rem !important;
+  text-align: left !important;
+}
+
+label {
+  font-family: "inter-bold" !important;
+  font-size: 1.6rem !important;
+  font-weight: 600 !important;
+  line-height: 1.9rem !important;
+  margin-bottom: 0.6rem !important;
+  margin-left: 0.6rem !important;
+}
+
+.btn-primry {
+  background-color: #1db790 !important;
+  color: white !important;
+}
+
+.btn {
+  padding: 1.5rem, 2.0rem, 1.5rem, 2.0rem !important;
+  height: 5rem !important;
+  border-radius: .8rem !important;
+  font-family: "inter-400" !important;
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+  line-height: 2.4rem !important;
+}
+
+.btn:hover {
+  opacity: 90%;
+}
+
+.otp-inputs input {
+  width: 4.0rem !important;
+  height: 4.0rem !important;
+  padding: 1.2rem !important;
+  font-size: 1.6rem !important;
+  color: #1db790 !important;
+  font-family: "inter-400";
 }
