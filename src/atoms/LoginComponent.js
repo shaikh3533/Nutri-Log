@@ -42,10 +42,10 @@ export default function LoginComponent(props) {
                             <p className='fs-16 inter-400 text-primry text-center my-2'>-----------<span className='text-dark mx-3'>OR</span>-----------</p>
                             <div className="col-8 mx-auto row">
                                 <div className="col-md-6 px-3">
-                                    <button className='btn btn-outline-secondary w-100 d-inline-flex w-100 mx-auto'><img src={googleIcon} className='me-3 my-auto' /><span className='my-auto'>Google</span> </button>
+                                    <button className='btn btn-outline-secondary w-100 d-inline-flex w-100'><img src={googleIcon} className='mx-3 my-auto' /><span className='my-auto'>Google</span> </button>
                                 </div>
                                 <div className="col-md-6 px-3">
-                                    <button className='btn btn-outline-secondary w-100 d-inline-flex w-100 mx-auto'><img src={appleIcon} className='me-3 my-auto' /><span className='my-auto'>Apple</span></button>
+                                    <button className='btn btn-outline-secondary w-100 d-inline-flex w-100'><img src={appleIcon} className='mx-3 my-auto' /><span className='my-auto'>Apple</span></button>
                                 </div>
                             </div>
                         </form>
