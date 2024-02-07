@@ -251,9 +251,10 @@ label {
 }
 
 .otp-inputs input {
-  width: 4.0rem !important;
-  height: 4.0rem !important;
+  width: 4.5rem !important;
+  height: 4.5rem !important;
   padding: 1.2rem !important;
+  margin: 0rem .5rem;
   font-size: 1.6rem !important;
   color: #1db790 !important;
   font-family: "inter-400";

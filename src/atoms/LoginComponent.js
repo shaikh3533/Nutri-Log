@@ -33,7 +33,6 @@ export default function LoginComponent(props) {
                                         renderSeparator={<span>-</span>}
                                         renderInput={(props) => <input
                                             {...props} />}
-                                    // inputStyle={ {width:"40px"}}
                                     />
                                 </div>
                             </div>
