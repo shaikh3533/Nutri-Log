@@ -59,7 +59,8 @@ export default function LoginComponent(props) {
                     minLength={4}
                     maxLength={4}
                     onChange={(e) => {
-                      setOtp(e.target.value);
+                      const input = e.target.value;
+                      setOtp(input.substring(0, 4));
                     }}
                   />
                 </div>
