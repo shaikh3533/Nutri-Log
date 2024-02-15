@@ -10,7 +10,7 @@ export default function Navbar() {
         <div className="d-flex my-auto">
           <Link to="/home">
             <p
-              className="text-white me-4 my-auto"
+              className="text-white me-5 my-auto"
               style={{ fontSize: "16px", fontWeight: "600" }}
             >
               Home
@@ -18,27 +18,27 @@ export default function Navbar() {
           </Link>
           <Link to="health">
             <p
-              className="text-white me-4 my-auto"
+              className="text-white me-5 my-auto"
               style={{ fontSize: "16px", fontWeight: "600" }}
             >
               Health
             </p>
           </Link>
           <p
-            className="text-white me-4 my-auto"
+            className="text-white me-5 my-auto"
             style={{ fontSize: "16px", fontWeight: "600" }}
           >
             FAQs
           </p>
           <p
-            className="text-white me-4 my-auto"
+            className="text-white me-5 my-auto"
             style={{ fontSize: "16px", fontWeight: "600" }}
           >
             About
           </p>
           <Link to="/login">
             <button
-              className="bg-transparent text-white px-4 py-2 rounded me-4"
+              className="bg-transparent text-white px-4 py-2 rounded me-5"
               style={{
                 fontSize: "16px",
                 fontWeight: "600",

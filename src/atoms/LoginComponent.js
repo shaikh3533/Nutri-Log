@@ -14,7 +14,7 @@ export default function LoginComponent(props) {
     setEmail,
   } = props;
   return (
-    <div className="col-md-10 mx-auto row my-auto">
+    <div className="col-md-11 mx-auto row my-auto">
       <div className="col-12 col-md-6 d-flex flex-column">
         <h1 className="text-primry w-50">{topHeading}</h1>
         <p className="fs-16 text-light inter-400 w-75">{topdescription}</p>
@@ -27,7 +27,7 @@ export default function LoginComponent(props) {
               Welcome back! Please enter your details
             </p>
             <form className="p-5">
-              <div className="form-group mb-2">
+              <div className="form-group mb-4">
                 <label for="exampleInputEmail1">Email Address</label>
                 <input
                   type="email"
@@ -48,7 +48,7 @@ export default function LoginComponent(props) {
                   We'll never share your email with anyone else.
                 </small>
               </div>
-              <div className="row">
+              <div className="row my-4">
                 <div className="col-md-6 px-3 my-auto">
                   <input
                     type="number"
@@ -92,7 +92,7 @@ export default function LoginComponent(props) {
                   />
                 </div>*/}
               </div>
-              <div className="my-2">
+              <div className="my-3">
                 <Link to="/GetStarted">
                   <button
                     className={`btn btn-primry fs-2 w-100 ${
@@ -103,7 +103,7 @@ export default function LoginComponent(props) {
                   </button>
                 </Link>
               </div>
-              <div className="col-6 mx-auto">
+              <div className="col-6 mx-auto my-2">
                 <p className="fs-16 inter-400 my-3 d-inline-flex">
                   <div className="horizontal-line my-auto"></div>
                   <span className="text-dark mx-3">OR</span>
@@ -112,7 +112,7 @@ export default function LoginComponent(props) {
               </div>
               {/* <div className="col-8 mx-auto row"> */}
               {/* <div className="col-md-6 px-3"> */}
-              <button className="btn btn-outline-secondary fs-2 w-100 mt-2">
+              <button className="btn btn-outline-secondary fs-2 w-100 mt-3">
                 <div className="mx-auto d-inline-flex">
                   <img src={googleIcon} className="mx-4 my-auto" />
                   <span className="my-auto ">Google</span>{" "}
