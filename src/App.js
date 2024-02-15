@@ -12,11 +12,11 @@ import Home from "./Routs/Pages/Home"
 
 function App() {
   return (
-    <div className='login-bg'>
+    <div className='d-flex flex-column login-bg'>
       <Navbar />
       <Routes>
         {/* {localStorage.getItem("userIsLoggedIn") ? null : ( */}
-        <Route path="/login" element={<Login />} />
+        <Route path="login" element={<Login />} />
         {/* // )} */}
         {/* <Route element={<ProtectedRoutes />}> */}
         <Route path="/*" element={<MainComponent />} />

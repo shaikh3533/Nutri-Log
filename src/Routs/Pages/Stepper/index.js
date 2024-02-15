@@ -85,7 +85,7 @@ export default function HorizontalNonLinearStepper() {
   };
 
   return (
-    <div className="container mx-auto mt-5 pt-5">
+    <div className="container my-auto">
       <div className="col-md-6 mx-auto p-5 stepper-card mt-5">
         <Box sx={{ width: "100%" }}>
           <Stepper

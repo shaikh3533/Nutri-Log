@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function index() {
     return (
-        <div className='container mx-auto d-flex flex-column h-75 pt-5'>
+        <div className='container mx-auto my-auto'>
             <div className='col-md-10 mx-auto row my-auto'>
                 <div className='col-12 col-md-10'>
                     <h1 className='text-primry w-75'>Personalize your Diet Website Plan!</h1>
